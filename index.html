@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://naveenruttala.github.io/portfolio2/ />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </head>
+  
+    <body>
+<body>
+  <body>
+  <section id="landing" class="landing-section">
+    <video autoplay muted loop id="landing-video">
+      <source src="intro.mp4" type="video/mp4" />
+    </video>
+
+    <div class="landing-content">
+      <img src="image.jpg" alt="Naveen Profile" class="landing-profile" />
+      <h1 class="landing-name">Naveen Ruttala</h1>
+      <button class="explore-btn" onclick="showPortfolio()">Explore the Portfolio</button>
+    </div>
+  </section>
+
+  <div id="main-content" style="display:none;">
+    <!-- Your full portfolio content here -->
+    <header class="header">...</header>
+
+    <!-- Home Section -->
+    <section class="home" id="home">
+      <!-- home content -->
+    </section>
+
+    <!-- other sections... -->
+  </div>
+
+  <script>
+    function showPortfolio() {
+      document.getElementById('landing').style.display = 'none';
+      const mainContent = document.getElementById('main-content');
+      mainContent.style.display = 'block';
+      document.getElementById('home').scrollIntoView({ behavior: 'smooth' });
+    }
+  </script>
+</body>
+
+
+    <video autoplay muted loop id="bg-video">
+  <source src="background.mp4" type="video/mp4" />
+  Your browser does not support HTML5 video.
+</video>
+
+    <header class="header">
+      <a href="#home" class="logo">Naveen <span>Ruttala</span></a>
+      <i class="bx bx-menu" id="menu-icon"></i>
+      <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#qualifications">Qualifications</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+
+    <!-- Home Section -->
+    <section class="home" id="home">
+      <div class="home-content">
+        <h1>Hi, It's <span>Naveen</span></h1>
+        <h3>I'm a <span>Frontend Developer</span></h3>
+        <p>
+          B.Tech freshman at SRM University, excited to embark on a journey of
+          learning and innovation. Passionate about technology, engineering,
+          coding, eager to build skills and contribute to impactful projects.
+          Always open to connecting and growing together!
+        </p>
+        <div class="social-icon">
+          <a href="https://github.com/" target="_blank"><i class="bx bxl-github"></i></a>
+          <a href="https://www.linkedin.com/in/naveen-ruttala-258a2a323/" target="_blank"><i class="bx bxl-linkedin-square"></i></a>
+          <a href="https://www.instagram.com/naveen__rocks?igsh=enZ1bTFxaWE3NWEy" target="_blank"><i class="bx bxl-instagram-alt"></i></a>
+          <a href="https://x.com/Ranger_na06" target="_blank"><i class="bx bxl-twitter"></i></a>
+        </div>
+
+        <div class="btn-group">
+          <a href="#" class="btn" onclick="showHirePopup()">Hire</a>
+          <a href="#contact" class="btn">Contact</a>
+        </div>
+      </div>
+
+      <div class="home-img">
+        <img src="image.jpg" alt="Naveen Image" />
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+      <div class="about-img">
+        <img src="image.jpg" alt="Naveen Image" />
+      </div>
+
+      <div class="about-content">
+        <h2>About <span>Me</span></h2>
+        <p>
+          I'm a Frontend Developer and B.Tech freshman at SRM University,
+          excited to embark on a journey of learning and innovation. Passionate
+          about technology, engineering, and coding, I'm eager to build skills
+          and contribute to impactful projects. Always open to connecting and
+          growing together!
+        </p>
+        <a href="#" class="btn">Read More</a>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+      <h2 class="heading">Services</h2>
+
+      <div class="services-container">
+        <div class="service-box">
+          <div class="service-info">
+            <i class="bx bxs-devices"></i>
+            <h4>Mobile App Development</h4>
+            <p>
+              I offer mobile development, UI/UX improvement, app optimization
+              and integration. Whether you need clean UI or scalable code, I’m
+              here to help!
+            </p>
+          </div>
+        </div>
+
+        <div class="service-box">
+          <div class="service-info">
+            <i class="bx bxs-code"></i>
+            <h4>Frontend Development</h4>
+            <p>
+              I build responsive and accessible user interfaces using HTML, CSS,
+              and JavaScript. Clean design and modern web principles are my
+              focus.
+            </p>
+          </div>
+        </div>
+
+        <div class="service-box">
+          <div class="service-info">
+            <i class="bx bx-code-curly"></i>
+            <h4>Responsive Web Design</h4>
+            <p>
+              Developing mobile-first websites that work smoothly on all devices — ensuring accessibility and usability for everyone.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+    <!-- Qualifications Section -->
+    <section class="qualifications" id="qualifications">
+      <h2 class="heading">My <span>Qualifications</span></h2>
+      <div class="qualification-box">
+        <div class="qualification-item">
+          <h4>10th - DE PAUL SCHOOL, UKKUNAGARAM</h4>
+          <p>2021 - 2022 | 79%</p>
+        </div>
+        <div class="qualification-item">
+          <h4>11th & 12th - FIITJEE JUNIOR COLLEGE</h4>
+          <p>2022 - 2024 | 91.2%</p>
+        </div>
+        <div class="qualification-item">
+          <h4>B.Tech - SRM Institute of Technology</h4>
+          <p>2024 - Present | 9.2 CGPA</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+      <h2 class="heading">Skills & <span>Abilities</span></h2>
+      <div class="skills-container">
+        <div class="skill-item"><i class="bx bx-task"></i> Project Management</div>
+        <div class="skill-item"><i class="bx bx-brain"></i> Critical Thinking</div>
+        <div class="skill-item"><i class="bx bx-microphone"></i> Public Speaking</div>
+        <div class="skill-item"><i class="bx bx-bulb"></i> Taking Initiative</div>
+        <div class="skill-item"><i class="bx bx-user-voice"></i> Leadership</div>
+        <div class="skill-item"><i class="bx bx-group"></i> Teamwork</div>
+        <div class="skill-item"><i class="bx bx-pencil"></i> Writing</div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+      <h2 class="heading">Contact <span>Me</span></h2>
+      <form
+        action="https://formsubmit.co/naveenruttala2020@gmail.com"
+        method="POST"
+        onsubmit="showPopup(event)"
+      >
+        <input type="hidden" name="_captcha" value="false" />
+        <input type="hidden" name="_template" value="table" />
+
+        <div class="input-group">
+          <div class="input-box">
+            <input type="text" name="Full Name" placeholder="Full Name" required />
+            <input type="email" name="Email" placeholder="Email" required />
+          </div>
+
+          <div class="input-box">
+            <input type="number" name="Phone Number" placeholder="Phone Number" />
+            <input type="text" name="Subject" placeholder="Subject" />
+          </div>
+        </div>
+
+        <div class="input-group-2">
+          <textarea name="Message" cols="30" rows="10" placeholder="Your Message" required></textarea>
+          <input type="submit" value="Send Message" class="btn" />
+        </div>
+      </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="social-icon">
+        <a href="https://github.com/"><i class="bx bxl-github"></i></a>
+        <a href="https://www.linkedin.com/in/naveen-ruttala-258a2a323/"><i class="bx bxl-linkedin-square"></i></a>
+        <a href="https://www.instagram.com/naveen__rocks?igsh=enZ1bTFxaWE3NWEy"><i class="bx bxl-instagram-alt"></i></a>
+        <a href="https://x.com/Ranger_na06"><i class="bx bxl-twitter"></i></a>
+      </div>
+
+      <ul class="list">
+        <li><a href="#">FAQ</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#qualifications">Qualifications</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <p class="copyright">
+        &copy; 2025 Naveen Ruttala | All Rights Reserved
+      </p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+    <script>
+      function showPopup(event) {
+        event.preventDefault();
+        const form = event.target;
+
+        Swal.fire({
+          icon: "success",
+          title: "Success!",
+          text: "Your message has been sent.",
+          confirmButtonColor: "#3085d6",
+          confirmButtonText: "OK",
+        }).then(() => {
+          form.submit();
+        });
+      }
+
+      function showHirePopup() {
+        Swal.fire({
+          title: "<h2>👔 Contact Details</h2>",
+          html: `
+            <div style="font-size: 1.05rem; line-height: 1.8; text-align: center;">
+              <img src="image.jpg" alt="Profile" style="width: 100px; height: 100px; border-radius: 50%; margin-bottom: 10px;">
+              <p><i class="bx bx-phone" style="color:#3085d6;"></i> <b>Phone:</b> 9441998178</p>
+              <p><i class="bx bx-envelope" style="color:#3085d6;"></i> <b>Email:</b> naveenruttala2020@gmail.com</p>
+              <a href="Naveen_Resume.pdf" download class="btn" style="
+                  display: inline-block;
+                  margin-top: 10px;
+                  background-color: #3085d6;
+                  color: white;
+                  padding: 8px 16px;
+                  border-radius: 6px;
+                  text-decoration: none;
+                  font-weight: bold;
+              ">📄 Download Resume</a>
+            </div>
+          `,
+          icon: "info",
+          showClass: {
+            popup: "animate__animated animate__fadeInDown",
+          },
+          hideClass: {
+            popup: "animate__animated animate__fadeOutUp",
+          },
+          confirmButtonText: "Close",
+          confirmButtonColor: "#3085d6",
+        });
+      }
+    </script>
+  </body>
+</html>
